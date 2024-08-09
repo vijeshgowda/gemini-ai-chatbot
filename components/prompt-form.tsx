@@ -69,16 +69,7 @@ export function PromptForm({
         } catch {
           toast(
             <div className="text-red-600">
-              You have reached your message limit! Please try again later, or{' '}
-              <a
-                className="underline"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://vercel.com/templates/next.js/gemini-ai-chatbot"
-              >
-                deploy your own version
-              </a>
-              .
+              You have reached your message limit! Please try again later.
             </div>
           )
         }
@@ -118,7 +109,7 @@ export function PromptForm({
           }
         }}
       />
-      <div className="relative flex max-h-60 w-full grow flex-col overflow-hidden bg-zinc-100 px-12 sm:rounded-full sm:px-12">
+      <div className="relative flex max-h-60 w-full grow flex-col overflow-hidden bg-blue-100 px-12 sm:rounded-full sm:px-12">
         {/* <Tooltip>
           <TooltipTrigger asChild> */}
         <Button

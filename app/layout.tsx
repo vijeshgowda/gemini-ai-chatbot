@@ -8,6 +8,7 @@ import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 import { Toaster } from '@/components/ui/sonner'
 import { KasadaClient } from '@/lib/kasada/kasada-client'
+import CustomCursor from '@/components/customCursor';
 
 export const metadata = {
   metadataBase: new URL('https://gemini.vercel.ai'),
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <TailwindIndicator />
         </Providers>
         <Analytics />
+        <CustomCursor />
       </body>
     </html>
   )
