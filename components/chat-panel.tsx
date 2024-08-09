@@ -60,10 +60,10 @@ export function ChatPanel({
         <div className="mb-4 grid sm:grid-cols-2 gap-2 sm:gap-4 px-4 sm:px-0">
           {messages.length === 0 &&
             exampleMessages.map((example, index) => (
-              <div
+              <a
                 key={example.heading}
                 className={cn(
-                  'cursor-pointer bg-blue-100 text-zinc-950 rounded-2xl p-4 sm:p-6 hover:bg-zinc-100 transition-colors',
+                  'bg-blue-100 text-zinc-950 rounded-2xl p-4 sm:p-6 hover:bg-zinc-100 transition-colors',
                   index > 1 && 'hidden md:block'
                 )}
                 onClick={async () => {
@@ -98,7 +98,7 @@ export function ChatPanel({
                 <div className="text-sm text-zinc-800">
                   {example.subheading}
                 </div>
-              </div>
+              </a>
             ))}
         </div>
 
